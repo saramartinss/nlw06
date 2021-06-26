@@ -5,6 +5,10 @@ export const StyledNewRoom = styled.div`
   align-items: stretch;
   height: 100vh;
 
+  @media (max-width: 780px) {
+    flex-direction: column;
+  }
+
   aside {
     flex: 7;
 
@@ -33,6 +37,28 @@ export const StyledNewRoom = styled.div`
       margin-top: 16px;
       color: #f8f8f8;
     }
+
+    @media (max-width: 768px) {
+      flex: auto;
+      padding: 20px;
+
+      img {
+        max-width: 100px;
+        margin: 0 auto;
+      }
+
+      strong {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
   }
 
   main {
@@ -43,6 +69,10 @@ export const StyledNewRoom = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
   }
 
   .main-content {
