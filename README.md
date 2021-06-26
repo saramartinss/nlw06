@@ -12,10 +12,6 @@
 
 <br>
 
-<p align="center">
-  <img alt="Let me ask" src="src/assets/images/letmeask.svg" width="100%">
-</p>
-
 ## ✨ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
