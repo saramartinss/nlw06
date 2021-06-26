@@ -1,15 +1,15 @@
 import { FormEvent, useState } from 'react';
 import { useHistory } from 'react-router';
 
-import { database } from '../services/firebase';
-import { Button } from '../components/Button';
+import { database } from '../../services/firebase';
+import { Button } from '../../components/Button';
 
-import illustrationImg from '../assets/images/illustration.svg'
-import logoImg from '../assets/images/logo.svg'
-import googleIconImg from '../assets/images/google-icon.svg'
+import illustrationImg from '../../assets/images/illustration.svg'
+import logoImg from '../../assets/images/logo.svg'
+import googleIconImg from '../../assets/images/google-icon.svg'
 
-import '../styles/auth.scss';
-import { useAuth } from '../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
+import { StyledNewRoom } from './styles'
 
 export function Home() {
   const history = useHistory();
@@ -47,7 +47,7 @@ export function Home() {
   }
 
   return (
-    <div id="page-auth">
+    <StyledNewRoom>
       <aside>
         <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
         <strong>Crie salas de Q&amp;A ao vivo</strong>
@@ -75,6 +75,6 @@ export function Home() {
           </form>
         </div>
       </main>
-    </div>
+    </StyledNewRoom>
   )
 }
