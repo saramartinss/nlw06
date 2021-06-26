@@ -25,11 +25,37 @@ export const StyledRoom = styled.div`
         }
       }
     }
+
+    @media (max-width: 768px) {
+      padding: 20px;
+      width: 100vw;
+      position: fixed;
+      background: #f8f8f8;
+
+      .content {
+        gap: 8px;
+        justify-content: center;
+
+        .room {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+        }
+
+        > img {
+          display: none;
+        }
+      }
+    }
   }
 
   main {
     max-width: 800px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+      padding: 110px 20px 20px;
+    }
 
     .room-title {
       margin: 32px 0 24px;

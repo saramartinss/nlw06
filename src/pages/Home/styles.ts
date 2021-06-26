@@ -71,7 +71,7 @@ export const StyledNewRoom = styled.div`
     justify-content: center;
 
     @media (max-width: 768px) {
-      padding: 0 20px;
+      padding: 20px;
     }
   }
 
